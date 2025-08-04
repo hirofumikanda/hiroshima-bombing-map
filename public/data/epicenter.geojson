@@ -1,0 +1,13 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "爆心地", "symbol": "X" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [132.4553, 34.3956]
+      }
+    }
+  ]
+}
