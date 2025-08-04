@@ -3,7 +3,7 @@ import type { Feature, Polygon, Position } from "geojson";
 import type { BlastCircleProps } from "./types";
 
 const createCircle = (
-  center: Position, // または Point の geometry を受けるなら center: Point
+  center: Position,
   radiusKm: number,
   props: BlastCircleProps
 ): Feature<Polygon, BlastCircleProps> => {

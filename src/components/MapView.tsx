@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import useMap from "../utils/useMap";
+import useMap from "../utils/map/useMap";
 
 const MapView = () => {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);

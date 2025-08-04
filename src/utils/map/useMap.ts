@@ -3,7 +3,7 @@ import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { buildBlastFeatureCollection } from "./blastCircles";
 import { addBlastLayers, setLayerVisibility } from "./layers";
-import { setupPopupHandler } from "./popup";
+import { setupPopupHandler } from "../popup/popup";
 
 const useMap = (
   containerRef: React.RefObject<HTMLDivElement | null>,
