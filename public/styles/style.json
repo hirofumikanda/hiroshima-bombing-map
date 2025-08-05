@@ -61,18 +61,6 @@
       }
     },
     {
-      "id": "hiroshima",
-      "type": "raster",
-      "source": "hiroshima",
-      "minzoom": 10,
-      "paint": {
-        "raster-opacity": 0.5
-      },
-      "layout": {
-        "visibility": "none"
-      }
-    },
-    {
       "id": "airphoto",
       "type": "raster",
       "source": "airphoto",
