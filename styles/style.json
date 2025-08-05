@@ -19,14 +19,6 @@
       "maxzoom": 17,
       "scheme": "xyz"
     },
-    "hiroshima": {
-      "type": "raster",
-      "tiles": ["/hiroshima-bombing-map/data/hiroshima/{z}/{x}/{y}.png"],
-      "attribution": "<a href=\"https://www.mhlw.go.jp/bunya/kenkou/genbaku09/15e.html\" target=\"_blank\">厚労省「原爆放射線について」</a>の図を加工して作成",
-      "minzoom": 10,
-      "maxzoom": 15,
-      "scheme": "xyz"
-    },
     "airphoto": {
       "type": "raster",
       "tiles": ["/hiroshima-bombing-map/data/airphoto/{z}/{x}/{y}.png"],
