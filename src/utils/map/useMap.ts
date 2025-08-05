@@ -50,7 +50,7 @@ const useMap = (
       container: containerRef.current,
       style: "styles/style.json",
       center: [132.4553, 34.3956],
-      zoom: 13,
+      zoom: 14.8,
       minZoom: 10,
       hash: true,
     });
@@ -58,7 +58,7 @@ const useMap = (
     mapRef.current = map;
     map.addControl(new maplibregl.NavigationControl(), "top-right");
 
-    map.on("load", () => {
+    map.on("load", async () => {
       loadedRef.current = true;
 
       const blastData = buildBlastFeatureCollection();
@@ -66,6 +66,9 @@ const useMap = (
       addBlastLayers(map);
 
       ensureAirphotoExists(map, airphotoVisible);
+
+      const point_img = await map.loadImage("images/point.png");
+      map.addImage("point", point_img.data);
     });
 
     setupPopupHandler(map);

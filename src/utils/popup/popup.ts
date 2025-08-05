@@ -21,14 +21,17 @@ const buildPopupContent = (feature: MapGeoJSONFeature): string => {
 
   for (const key in props) {
     if (Object.prototype.hasOwnProperty.call(props, key)) {
+      const value = String(props[key]);
+
+      const valueHTML =
+        key.toLowerCase() === "link"
+          ? `<a href="${escapeHTML(value)}" target="_blank" rel="noopener noreferrer">詳細</a>`
+          : escapeHTML(value);
+
       html += `
         <tr>
-          <td style="padding:4px; border:1px solid #ccc;"><strong>${escapeHTML(
-            key
-          )}</strong></td>
-          <td style="padding:4px; border:1px solid #ccc;">${escapeHTML(
-            String(props[key])
-          )}</td>
+          <td style="padding:4px; border:1px solid #ccc;"><strong>${escapeHTML(key)}</strong></td>
+          <td style="padding:4px; border:1px solid #ccc;">${valueHTML}</td>
         </tr>`;
     }
   }
@@ -36,6 +39,7 @@ const buildPopupContent = (feature: MapGeoJSONFeature): string => {
   html += `</table>`;
   return html;
 };
+
 
 const escapeHTML = (str: string): string =>
   str.replace(/[&<>"']/g, (char) => {

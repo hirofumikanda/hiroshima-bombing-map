@@ -3,7 +3,7 @@ import useMap from "../utils/map/useMap";
 
 const MapView = () => {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
-  const [airphotoVisible, setAirphotoVisible] = useState(true);
+  const [airphotoVisible, setAirphotoVisible] = useState(false);
 
   useMap(mapContainerRef, airphotoVisible);
 
