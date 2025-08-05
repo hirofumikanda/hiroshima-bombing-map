@@ -9,6 +9,7 @@
 
 - 爆風範囲（半径2km）：建物の全焼・倒壊が想定される領域
 - 熱線範囲（半径3km）：火傷や建物の自然発火が想定される領域
+- 被爆後の空中写真（1945-50）
 - 被爆前の空中写真：任意で表示の切り替えが可能
 - 広島市公表の被爆建物一覧をマッピング表示
 
@@ -64,7 +65,7 @@ npm run dev
 
 ## 使用データ・出典
 
-* 空中写真レイヤー：[国土地理院地理院タイル](https://maps.gsi.go.jp/development/ichiran.html#ort_USA10)、[被爆前空中写真](https://www.gsi.go.jp/chugoku/use-19450725.html)
+* 空中写真(1945-50年)レイヤー：[国土地理院地理院タイル](https://maps.gsi.go.jp/development/ichiran.html#ort_USA10)、[被爆前空中写真](https://www.gsi.go.jp/chugoku/use-19450725.html)
 * 爆風・熱線範囲：Turf.js により生成した円形ポリゴン
 * 被爆建物一覧：[広島市被爆建物リスト一覧](https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026921/1003420.html)
 
