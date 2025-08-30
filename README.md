@@ -15,6 +15,9 @@
 
 各範囲は GeoJSON 形式で生成し、MapLibre GL JS 上にベクトルレイヤーとして描画されます。
 
+## デモ
+[GitHub Pagesで公開中](https://hirofumikanda.github.io/hiroshima-bombing-map/)
+
 ## 技術構成
 
 | 技術        | 用途                            |
